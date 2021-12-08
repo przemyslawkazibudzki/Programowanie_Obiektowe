@@ -1,45 +1,43 @@
-#include <iostream>
-
-using namespace std;
-
-class zwierzePies {
-    string imie;
-    string rasa;
+#include <iostream>                      // Trzeba dokoñczyæ
+                                        // Trzeba dokoñczyæ
+using namespace std;                     // Trzeba dokoñczyæ
+                                        // Trzeba dokoñczyæ
+class Ludziska {
     int wiek;
+    string imie;
 public:
-    void przypisaniePieska() {
-    cout <<  "Podaj imie psa -> ";
+    void ustawObiekt() {
+    cout << "Wprowadz imie -> ";
     cin >> imie;
-    cout << "Podaj rase pieska -> ";
-    cin >> rasa;
-    cout << "Zapodaj wiek twojego pieska -> ";
+    cout << "Wprowadz tutaj wiek -> ";
     cin >> wiek;
     }
-    void pokazPieska() {
-    cout << "Ten piesek o ktorym wspominales posiada imie: " << imie << ", jest rasy: " << rasa << " a wiek tego pieska wynosi " << wiek << " lat." << endl;
-    }
-    void wyrazyPieska(){
-    cout << "Ten piesek o imieniu " << imie << " jest zly i szczeka: HAUL HAU HAYU";
+    void bierzObiekt() {
+    cout << "Oto imie zapisane tutaj -> " << imie << " tutaj wiek -> " << wiek << endl;
     }
 };
 
 int main()
 {
     int k;
-    cout << "Napisz ile psow mozesz napisac -> ";
+    cout << "Ile ludzi jest -> ";
     cin >> k;
-    zwierzePies *l = new zwierzePies[k];
+    Ludziska obiekt1;
+    Ludziska * obiekt2 = new Ludziska[k];
 
-    for (int i=0; i<k; i++)
-    {
-     l[i].przypisaniePieska();
+
+    for (int i=0;i<k;i++){
+        obiekt2[i].ustawObiekt();
     }
 
-    delete [] l;
-
-    zwierzePies piesiaw1;
-    piesiaw1.przypisaniePieska();
-    piesiaw1.pokazPieska();
-    piesiaw1.wyrazyPieska();
+    obiekt1.ustawObiekt();
+    //(*obiekt1).bierzObiekt();
+    //Ludziska * obiekt1 = new Ludziska;
+    //obiekt1.ustawObiekt;
+    //obiekt1.bierzObiekt;
+    //obiekt2.ustawObiekt();
+    //obiekt2.bierzObiekt();
+    //delete obiekt1;
+    delete [] obiekt2;
     return 0;
 }
