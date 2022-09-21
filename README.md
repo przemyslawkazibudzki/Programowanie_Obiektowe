@@ -1,1 +1,1 @@
-![](https://github.com/Your_Repository_Name/Your_GIF_Name.gif)
+![](https://i.giphy.com/media/eIUpSyzwGp0YhAMTKr/200w.webp)
